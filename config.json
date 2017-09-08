@@ -1,0 +1,19 @@
+{
+  "version": "0.0.1",
+  "name": "果壳",
+  "description": "果壳",
+  "keywords": [
+    "科普"
+  ],
+  "author": {
+    "name": "vimrus",
+    "email": "vimrus.com@gmail.com",
+    "url": "https://github.com/vimrus"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vimrus/guokr"
+  },
+  "bugs": "https://github.com/vimrus/guokr/issues",
+  "main": "index.js"
+}

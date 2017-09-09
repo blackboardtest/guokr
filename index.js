@@ -12,6 +12,7 @@ hubble.getJSON('http://www.guokr.com/apis/minisite/article.json?retrieve_type=by
 
 			hubble.getHtml(url, function (error, response, $) {
 				var content = $('.document').html();
+				var image   = $('.document img').eq(0).attr('src');
 
 				var article = {
 					title: title,

@@ -1,8 +1,8 @@
 hubble.getJSON('http://www.guokr.com/apis/minisite/article.json?retrieve_type=by_subject&limit=20', function (error, response, data) {
 	data.result.forEach(function(item) {
-		var key = item.id;
+		var id = item.id;
 
-		articles.get('key', key, function (article) {
+		articles.get('id', id, function (article) {
 			if (article) return;
 
 			var image   = item.image_info.url;
@@ -15,7 +15,7 @@ hubble.getJSON('http://www.guokr.com/apis/minisite/article.json?retrieve_type=by
 				var image   = $('.document img').eq(0).attr('src');
 
 				var article = {
-					key: key,
+					id: id,
 					title: title,
 					content: content,
 					summary: summary,
